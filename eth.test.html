@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain Marketplace</title>
+  <style>
+    body {
+      font-family: Luminari, fantasy;
+      background-color: #1bbb88;
+      color: #a61818c5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1, h2 {
+      color: #000000;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    input[type="number"], input[type="text"] {
+      padding: 5px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 250px;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* Animations */
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Interactive UI */
+    .animated-background {
+      animation: gradient 10s ease infinite;
+      background: linear-gradient(-45deg, #ee0606, #06eb0d, #1bbb88, #ee0606);
+      background-size: 400% 400%;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="animated-background"></div>
+
+  <h1>Welcome to the Blockchain Marketplace</h1>
+
+  <h2>Buy Ethereum</h2>
+
+  <form>
+    <label for="ethAmount">Amount of Ethereum:</label>
+    <input type="number" id="ethAmount" name="ethAmount" min="0" step="0.01">
+    <br>
+    <label for="walletAddress">Wallet Address:</label>
+    <input type="text" id="walletAddress" name="walletAddress" placeholder="Enter your wallet address">
+    <br>
+    <button type="submit">Buy</button>
+  </form>
+
+  <h2>Sell Ethereum</h2>
+
+  <form>
+    <label for="ethAmount">Amount of Ethereum:</label>
+    <input type="number" id="ethAmount" name="ethAmount" min="0" step="0.01">
+    <br>
+    <label for="walletAddress">Wallet Address:</label>
+    <input type="text" id="walletAddress" name="walletAddress" placeholder="Enter your wallet address">
+    <br>
+    <button type="submit">Sell</button>
+  </form>
+
+  <h2>Trade Ethereum</h2>
+
+  <form>
+    <label for="ethAmount">Amount of Ethereum to trade:</label>
+    <input type="number" id="ethAmount" name="ethAmount" min="0" step="0.01">
+    <br>
+    <label for="token">Token to receive:</label>
+    <input type="text" id="token" name="token" placeholder="Enter token name">
+    <br>
+    <button type="submit">Trade</button>
+  </form>
+
+  <script>
+  </script>
+</body>
+</html>
